@@ -73,7 +73,7 @@ section {
 /* Header */
 
 .header {
-    padding: 24px;
+    /* padding: 24px; */
     border-bottom: 1px solid var(--color-cornflower);
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
@@ -88,12 +88,16 @@ section {
 }
 
 .nav-link {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: calc(24/16);
     color: var(--color-navy-blue);
     padding-bottom: 28px;
-    transition: transform, var(--animation);
+    transition: color var(--animation);
 }
 
 .active {
@@ -103,7 +107,7 @@ section {
 .active::after {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     width: 100%;
     height: 4px;
@@ -113,6 +117,8 @@ section {
 }
 
 .current {
+    padding-top: 24px;
+    padding-bottom: 24px;
     margin-right: 76px;
     font-family: 'Raleway';
     font-style: normal;
@@ -139,12 +145,16 @@ section {
     gap: 40px;
 }
 
-.address-link {
+.address-link {   
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: calc(24/16);
-    transition: transform, var(--animation);  
+    transition: color var(--animation);  
 }
 
 .adress-list__item {
@@ -174,7 +184,6 @@ section {
     url("../images/officework.jpg");
 }
 
-
 .hero-title {
     text-align: center;
     font-weight: 700;
@@ -198,7 +207,7 @@ section {
     font-size: 16px;
     letter-spacing: 0.04em;
     color: var(--color-white);
-    transition: transform, var(--animation);
+    transition: background-color var(--animation);
 }
 
 .hero-btn:hover,
@@ -348,7 +357,7 @@ section {
     background-color: var(--color-iris);
     border-radius: 50%;
     fill: var(--color-cloud);
-    transition: transform, var(--animation);
+    transition: backgroun-color var(--animation);
 }
 
 .social-link:hover,
@@ -383,7 +392,7 @@ section {
     border-radius: 4px;
     outline: transparent;
     fill: var(--color-light-slate);
-    transition: transform, var(--animation);
+    transition: fill var(--animation);
 }
 
 .customers-list__link:hover,
@@ -463,7 +472,7 @@ section {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     fill: var(--color-cloud);
-    transition: transform, var(--animation);
+    transition: background-color var(--animation);
 }
 
 .footer-social__link:hover,
@@ -493,7 +502,7 @@ section {
     background-color: var(--color-cloud);
     font-weight: 500;
     color: var(--color-iris);
-    transition: transform, var(--animation);
+    transition: background-color var(--animation);
 }
 
 .filtr-btn:hover,
@@ -520,7 +529,7 @@ section {
 .cards-link {
     display: block;
     outline: transparent;
-    transition: transform, var(--animation);
+    transition: transform var(--animation);
 }
 
 .cards-link__thumb {
@@ -542,7 +551,7 @@ section {
     height: 100%;
     padding: 40px 32px;
     background-color: var(--color-iris);
-    transition: transform, var(--animation);
+    transition: transform var(--animation);
     transform: translateY(100%);
 }
 
