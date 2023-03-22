@@ -500,7 +500,7 @@ section {
     background-color: var(--color-cloud);
     font-weight: 500;
     color: var(--color-iris);
-    transition: background-color var(--animation), color var(--animation);
+    transition: background-color var(--animation), color var(--animation), box-shadow var(--animation);
 }
 
 .filtr-btn:hover,
