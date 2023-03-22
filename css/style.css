@@ -529,7 +529,7 @@ section {
 .cards-link {
     display: block;
     outline: transparent;
-    transition: transform var(--animation);
+    transition: box-shadow var(--animation);
 }
 
 .cards-link__thumb {
