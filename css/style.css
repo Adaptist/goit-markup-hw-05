@@ -79,8 +79,7 @@ section {
 }
 
 .header-wrapper {
-    display: flex;
-    
+    display: flex;    
 }
 
 .header-wrapper > nav {
